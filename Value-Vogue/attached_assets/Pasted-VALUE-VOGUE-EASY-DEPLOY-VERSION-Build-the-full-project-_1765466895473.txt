@@ -1,0 +1,200 @@
+VALUE & VOGUE (EASY DEPLOY VERSION)
+Build the full project in one run. Do NOT ask me any questions.
+
+Generate a complete, ready-to-download project for an e-commerce website called “Value & Vogue”.
+The project must:
+
+✅ TECH STACK (simplified for Vercel deployment)
+
+Frontend: React + Vite
+
+Styling: Tailwind CSS
+
+Routing: React Router
+
+State: React Context (for cart)
+
+Backend: Minimal Node.js + Express API inside a /server folder
+
+Database: JSON files (products.json, users.json, inquiries.json)
+
+No TypeScript
+
+Simple, clean, easy-to-edit code
+
+✅ DEPLOYMENT REQUIREMENTS
+
+The project must be easily deployable on Vercel
+
+Frontend: deployed directly
+
+Backend: optional, separate or ignored (only for local demo)
+
+The project must be downloadable as ZIP, uploadable to GitHub, and deployable without errors.
+
+✅ WHAT TO GENERATE
+
+Generate the full repository with this structure:
+
+/README.md
+/package.json
+/vite.config.js
+/tailwind.config.cjs
+/postcss.config.cjs
+
+/src/main.jsx
+/src/App.jsx
+/src/index.css
+
+/src/pages/{Home,Shop,Product,Cart,Checkout,Account,Admin}.jsx
+/src/components/{Header,Footer,ProductCard,ProductGallery,CartDrawer,Filters,Pagination,Modal,Toast}.jsx
+
+/src/context/CartContext.jsx
+/src/data/{products.json,users.json,inquiries.json,copy.js}
+src/utils/cartUtils.js
+
+/server/index.js  (Express API for local demo)
+
+public/assets/{logo.svg,og-image.jpg,brochure.pdf}
+
+.eslintrc.js
+.prettierrc
+jest.config.cjs
+/.github/workflows/test.yml
+
+✅ FUNCTIONAL REQUIREMENTS
+User Features
+
+Home page
+
+Shop with search + filter
+
+Product detail page
+
+Cart with localStorage persistence
+
+Checkout simulation (no real payment)
+
+Account mock (JWT simulated)
+
+Admin mock page
+
+Cart system
+
+Add to cart
+
+Quick add
+
+Update quantities
+
+Remove items
+
+Auto total calculation via cartUtils.js
+
+LocalStorage persistence
+
+Mock Backend (server/index.js)
+
+GET /api/products
+
+GET /api/products/:id
+
+POST /api/inquiry
+
+POST /api/checkout
+
+POST /api/admin/product (demo protected)
+
+Stripe Integration (comments only)
+
+Include commented sample /api/create-payment-intent endpoint
+
+Add placeholders for publishable + secret keys
+
+No real keys
+
+✅ VISUAL & Aesthetic Requirements
+
+Modern, premium, minimal look
+
+White space + subtle shadows
+
+Tailwind colors only
+
+Accent color: muted rose #b5838d
+
+Fonts imported via Google Fonts:
+
+Inter
+
+Playfair Display
+
+Responsive (mobile-first)
+
+Accessible (aria-labels, focus styles)
+
+✅ DATA REQUIREMENTS
+
+Generate 12 sample products (6 men / 6 women) including:
+
+{
+  "id": "vogue-0001",
+  "slug": "mens-classic-linen-shirt",
+  "title": "Men's Classic Linen Shirt",
+  "category": "men",
+  "price": 1599,
+  "currency": "INR",
+  "sizes": ["S","M","L","XL"],
+  "colors": [{"name":"Navy","hex":"#0a2a6c"},{"name":"White","hex":"#ffffff"}],
+  "images": ["https://images.unsplash.com/..."],
+  "description": "Lightweight linen shirt, perfect for summer.",
+  "sku": "VV-M-001",
+  "inventory": 120,
+  "tags": ["linen","summer","formal"]
+}
+
+
+Use Unsplash/Pexels images.
+
+✅ README REQUIREMENTS
+
+Write a complete README including:
+
+(1) How to run locally
+
+npm install
+
+npm run dev
+
+npm run server (optional)
+
+(2) How to deploy on Vercel
+
+Frontend deployment instructions
+
+Backend alternative options (Render / serverless API)
+
+(3) How to enable Stripe
+
+Where to add keys
+
+Example endpoint
+
+How to turn simulation → real checkout
+
+(4) How to update products/images
+(5) Accessibility checklist
+(6) Performance tips
+❗ VERY IMPORTANT
+
+Generate the entire project in one shot
+
+Do NOT ask any follow-up questions
+
+Do NOT leave placeholders empty
+
+Do NOT simplify structure beyond what is listed
+
+Make the code extremely clean and readable
+
+Ensure the project is ready for ZIP download → GitHub → Vercel
