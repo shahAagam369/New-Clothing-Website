@@ -1,0 +1,1 @@
+{"buildCommand": "cd Value-Vogue && npm run build", "startCommand": "cd Value-Vogue && npm start", "outputDirectory": "Value-Vogue/dist", "env": {"NODE_ENV": "production"}}
