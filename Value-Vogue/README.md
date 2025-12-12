@@ -198,10 +198,6 @@ The project is compatible with any Node.js hosting platform that supports:
 - npm builds
 - Port binding on 5000 (or configure via PORT env)
 
-## Demo Credentials
-
-- **Admin Panel**: Password is `admin123`
-- **Account**: Any username/password works (demo mode)
 
 ## License
 
